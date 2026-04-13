@@ -13,6 +13,18 @@ async function main() {
   console.log("Text:", passage.text);
   console.log("Translation:", passage.translationId);
   console.log("Verses:", passage.verses);
+
+  console.log("\n--- Semantic Search --- 'el amor de Dios'");
+  const results = await client.semanticSearch("el amor de Dios", {
+    limit: 5,
+    translation: "spa-rv1909",
+  });
+  results.forEach((result) => {
+    console.log(
+      `${result.verse.bookName} ${result.verse.chapter}:${result.verse.verse} (similarity: ${result.similarity})`
+    );
+    console.log(`  ${result.verse.text}`);
+  });
 }
 
 main().catch(console.error);

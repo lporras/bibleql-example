@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bibleql-js": "^0.1.0",
+    "bibleql-js": "^0.2.0",
     "dotenv": "^17.4.1"
   }
 }
