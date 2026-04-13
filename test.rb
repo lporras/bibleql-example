@@ -14,3 +14,10 @@ puts passage.reference       # => "John 3:16"
 puts passage.text            # => "For God so loved the world..."
 passage.verses          # => [#<BibleQL::Verse ...>]
 puts passage.translation_id  # => "eng-web"
+
+puts "\nSemantic Search for 'amor y perdon' in Spanish RV1909 translation:"
+results = client.semantic_search("amor y perdon", translation: "spa-rv1909", limit: 5)
+# See all results
+results.each do |r|
+  puts "#{r.verse.book_name} #{r.verse.chapter}:#{r.verse.verse} (#{r.similarity}) - #{r.verse.text}"
+end

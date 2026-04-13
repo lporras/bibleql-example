@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    bibleql-ruby (0.1.0)
+    bibleql-ruby (0.2.0)
       faraday (~> 2.0)
     dotenv (3.2.0)
     faraday (2.14.1)
@@ -25,7 +25,7 @@ DEPENDENCIES
   dotenv
 
 CHECKSUMS
-  bibleql-ruby (0.1.0) sha256=eea87853c416eafd2f7130b0b083c7d1f839acf5b82ccd6c3db0644f21acdb43
+  bibleql-ruby (0.2.0) sha256=5da7ee23f58be184bb1712a2c70f08e6a83a206d9fc0e7aa7353d8157a5b9dc9
   dotenv (3.2.0) sha256=e375b83121ea7ca4ce20f214740076129ab8514cd81378161f11c03853fe619d
   faraday (2.14.1) sha256=a43cceedc1e39d188f4d2cdd360a8aaa6a11da0c407052e426ba8d3fb42ef61c
   faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
